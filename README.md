@@ -73,6 +73,7 @@ ggsave(..., dev = ragg::agg_png, dpi = 300, ...)
 * このレポから生成した環境なら以下のYAMLヘッダーでOK
   * ハングルもOK
 * フォントは適宜`mainfont`、`sansfont`、`monofont`を修正する。GoogleとかでダウンロードするNotoなら`"Noto Sans CJK JP"`でなく、`"Noto Snas JP"`だったりする。
+  * ターミナルで`fc-list :lang=ja`と入力し、日本語フォントリストから正確な名前を見ておこう。
 
 ````r
 ---
