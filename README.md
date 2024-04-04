@@ -33,12 +33,12 @@ $ rstudio-server version
 
 ## 備忘録
 
-**初期設定時**
+### 初期設定時
 
 * 最上位branch名に注意。Binderのデフォルトはmasterだが、mainならbranch名にmainと指定
 * 分析環境から初期ファイル（`apt.txt`や`environment.yml`）などを削除したい場合は`postBuild`ファイル内で指定
 
-**日本語作図**
+### 日本語作図
 
 RStudio上で表示は問題ない。ただし、PDFで書き出す際、フォントの埋め込みが必要なのでdeviceをCairoに指定。
 
@@ -64,11 +64,11 @@ PNG出力なら{ragg}で一発解決
 ggsave(..., dev = ragg::agg_png, dpi = 300, ...)
 ```
 
-**プロジェクトを開く**
+### プロジェクトを開く
 
 * Jupyter hubから`.Rproj`を選択しても開かれないため、RStudioを起動し、File > Open Project...で開く必要がある。
 
-**日本語が含まれたPDFの作成（Quarto）**
+### 日本語が含まれたPDFの作成（Quarto）
 
 このレポから生成した環境なら以下のYAMLヘッダーでOK
 
