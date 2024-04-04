@@ -70,7 +70,9 @@ ggsave(..., dev = ragg::agg_png, dpi = 300, ...)
 
 ### 日本語が含まれたPDFの作成（Quarto）
 
-このレポから生成した環境なら以下のYAMLヘッダーでOK
+* このレポから生成した環境なら以下のYAMLヘッダーでOK
+  * ハングルもOK
+* フォントは適宜`mainfont`、`sansfont`、`monofont`を修正する。GoogleとかでダウンロードするNotoなら`"Noto Sans CJK JP"`でなく、`"Noto Snas JP"`だったりする。
 
 ````
 ```{r}
