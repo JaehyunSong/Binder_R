@@ -1,4 +1,4 @@
-# Test Repository for Binder with R 4.2.2
+# Test Repository for Binder with R 4.3.3
 
 『[私たちのR: ベストプラクティスの探求](https://www.jaysong.net/RBook/)』の学習に必要なパッケージのみ事前インストールしたまっさらなR環境
 
@@ -12,25 +12,22 @@
 
 ```bash
 $ echo $BASH_VERSION
-4.4.20(1)-release
+5.1.16(1)-release
 
 $ cat /etc/lsb-release
 DISTRIB_ID=Ubuntu
-DISTRIB_RELEASE=18.04
-DISTRIB_CODENAME=bionic
-DISTRIB_DESCRIPTION="Ubuntu 18.04.6 LTS"
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.4 LTS"
 
 $ gcc --version
-gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
-Copyright (C) 2017 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 
 $ R --version
-R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
 
 $ rstudio-server version
-2022.12.0+353 (Elsbeth Geranium) for Ubuntu Bionic
+2023.12.1+402 (Ocean Storm) for Ubuntu Jammy
 ```
 
 
@@ -71,6 +68,63 @@ ggsave(..., dev = ragg::agg_png, dpi = 300, ...)
 
 * Jupyter hubから`.Rproj`を選択しても開かれないため、RStudioを起動し、File > Open Project...で開く必要がある。
 
+**日本語が含まれたPDFの作成（Quarto）**
+
+このレポから生成した環境なら以下のYAMLヘッダーでOK
+
+````
+```{r}
+---
+title: "日本語PDF作成のテスト"
+author: "宋財泫"
+date: today
+lang: ja
+format: 
+  pdf:
+    pdf-engine: xelatex
+    documentclass: bxjsarticle
+    classoption:
+      - a4paper
+      - 10pt
+    mainfont: "Noto Serif CJK JP"
+    sansfont: "Noto Sans CJK JP"
+    monofont: "Noto Sans Mono CJK JP"
+knitr:
+  opts_chunk: 
+    dpi: 300
+    dev: "ragg_png"
+    fig.align: "center"
+    warning: false
+    message: false
+    error: true
+---
+
+## 第1章：Quartoとは何か
+
+なんかすごいものらしいです。詳しくは<https://quarto.org>から。
+
+簡単な計算もできるし、
+
+```{r}
+1 + 1
+```
+
+作図もできる。今なら\texttt{\{ragg\}}があるから日本語が含まれた図も安心ね！
+
+```{r}
+#| message: false
+#| fig-width: 5
+#| fig-height: 2.5
+library(tidyverse)
+iris |> 
+  ggplot() +
+  geom_point(aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+  labs(x = "萼片の長さ", y = "花弁の長さ", color = "種")
+```
+
+한글도 출력 잘 됩니다!
+```
+````
 
 ## 参考
 
