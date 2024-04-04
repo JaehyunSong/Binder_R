@@ -74,8 +74,7 @@ ggsave(..., dev = ragg::agg_png, dpi = 300, ...)
   * ハングルもOK
 * フォントは適宜`mainfont`、`sansfont`、`monofont`を修正する。GoogleとかでダウンロードするNotoなら`"Noto Sans CJK JP"`でなく、`"Noto Snas JP"`だったりする。
 
-````
-```{r}
+````r
 ---
 title: "日本語PDF作成のテスト"
 author: "宋財泫"
@@ -125,7 +124,6 @@ iris |>
 ```
 
 한글도 출력 잘 됩니다!
-```
 ````
 
 ## 参考
