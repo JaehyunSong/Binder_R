@@ -11,11 +11,6 @@ libjpeg-dev
 libv8-dev
 libcurl4-openssl-dev
 libmagick++-dev
-texlive
-texlive-lang-japanese
-texlive-luatex
-texlive-latex-recommended
-texlive-plain-generic
 libicu-dev
 libpoppler-cpp-dev
 libgmp-dev
