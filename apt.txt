@@ -16,4 +16,4 @@ libpoppler-cpp-dev
 libgmp-dev
 librsvg2-dev
 libgdal-dev
-texlive-lang-japanese
+texlive-full
