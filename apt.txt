@@ -8,6 +8,8 @@ libfreetype6-dev
 libpng-dev
 libtiff5-dev
 libjpeg-dev
+zlib1g
+zlib1g-dev
 libv8-dev
 libcurl4-openssl-dev
 libmagick++-dev
