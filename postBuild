@@ -63,7 +63,7 @@ echo
 
 quarto install tinytex
 
-tlmgr list --only-installed
+# tlmgr list --only-installed
 
 Rscript setup_cran.R
 
