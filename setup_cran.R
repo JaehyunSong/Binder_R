@@ -1,4 +1,4 @@
-install.packages("daggity",  dependencies = TRUE, repos = "https://cran.rstudio.com/")
+install.packages("dagitty",  dependencies = TRUE, repos = "https://cran.rstudio.com/")
 install.packages("rdd",      dependencies = TRUE, repos = "https://cran.rstudio.com/")
 install.packages("rdrobust", dependencies = TRUE, repos = "https://cran.rstudio.com/")
 install.packages("gsynth",   dependencies = TRUE, repos = "https://cran.rstudio.com/")
