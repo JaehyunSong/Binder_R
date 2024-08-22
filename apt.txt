@@ -18,8 +18,3 @@ libpoppler-cpp-dev
 libgmp-dev
 librsvg2-dev
 libgdal-dev
-texlive-full
-texlive-luatex
-texlive-lang-japanese
-texlive-latex-extra
-texlive-latex-recommended
