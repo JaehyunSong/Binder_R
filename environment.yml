@@ -32,6 +32,7 @@ dependencies:
   - r-marginaleffects
   - r-gmp
   - r-ggdag
+  - r-dagitty
   # Visualization
   - r-ggpubr
   - r-gghighlight
