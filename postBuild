@@ -71,4 +71,8 @@ Rscript setup_gh.R
 
 Rscript setup.R
 
+# RStudio設定の移植
+mkdir -p ~/.config/rstudio
+mv rstudio-prefs.json ~/.config/rstudio/rstudio-prefs.json
+
 rm apt.txt README.md environment.yml postBuild setup_cran.R setup_gh.R setup.R
