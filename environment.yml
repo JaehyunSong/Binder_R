@@ -9,9 +9,8 @@ dependencies:
   - r-remotes
   - r-devtools
   - r-pacman
-  - r-xgbosst
+  - r-xgboost
   - r-arm
-  - r-xgbosst
   # Data Handling
   - r-naniar
   - r-fastdummies
