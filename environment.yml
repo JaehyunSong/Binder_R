@@ -11,6 +11,20 @@ dependencies:
   - r-pacman
   - r-xgboost
   - r-arm
+  - r-patchwork
+  - r-zoo
+  - r-ggstats
+  - r-s7
+  - r-rngtools
+  - r-sandwich
+  - r-ggally
+  - r-dorng
+  - r-doparallel
+  - r-mvtnorm
+  - r-lfe
+  - r-mitools
+  - r-lmtest
+  - r-aer
   # Data Handling
   - r-naniar
   - r-fastdummies
