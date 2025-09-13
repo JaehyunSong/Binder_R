@@ -16,7 +16,7 @@
     "syntax_color_console": true,
     "help_font_size_points": 12,
     "font_size_points": 12,
-    "server_editor_font_enabled": true,                      
+    "server_editor_font_enabled": true,
     "server_editor_font": "Source Code Pro",
     "cran_mirror": {
         "name": "Japan (Yonezawa) [https]",
@@ -41,7 +41,8 @@
             "TabSet2"
         ],
         "tabSet1": [
-            "History"
+            "History",
+            "Presentation"
         ],
         "tabSet2": [
             "Environment",
