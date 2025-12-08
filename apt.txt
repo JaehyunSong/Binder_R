@@ -18,4 +18,3 @@ libpoppler-cpp-dev
 libgmp-dev
 librsvg2-dev
 libgdal-dev
-tree
