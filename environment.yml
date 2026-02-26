@@ -25,6 +25,7 @@ dependencies:
   - r-mitools
   - r-lmtest
   - r-aer
+  - r-googlepolylines
   # Data Handling
   - r-naniar
   - r-fastdummies
