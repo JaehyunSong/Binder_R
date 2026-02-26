@@ -65,10 +65,13 @@ quarto install tinytex
 
 # tlmgr list --only-installed
 
+echo Run setup_cran.R
 Rscript setup_cran.R
 
+echo Run setup_gh.R
 Rscript setup_gh.R
 
+echo Run setup.R
 Rscript setup.R
 
 # RStudio設定の移植
