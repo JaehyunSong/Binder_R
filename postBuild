@@ -83,25 +83,3 @@ rm .Rprofile
 mv Rprofile .Rprofile
 
 rm apt.txt README.md environment.yml postBuild setup_cran.R setup_gh.R setup.R rdd_0.57.tar.gz
-
-
-quarto install tinytex
-
-# tlmgr list --only-installed
-
-echo Run setup_cran.R
-Rscript setup_cran.R
-
-echo Run setup_gh.R
-Rscript setup_gh.R
-
-echo Run setup.R
-Rscript setup.R
-
-# RStudio設定の移植
-mkdir -p ~/.config/rstudio
-mv rstudio-prefs.json ~/.config/rstudio/rstudio-prefs.json
-rm .Rprofile
-mv Rprofile .Rprofile
-
-rm apt.txt README.md environment.yml postBuild setup_cran.R setup_gh.R setup.R rdd_0.57.tar.gz
