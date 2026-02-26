@@ -72,4 +72,4 @@ Rscript setup.R
 mkdir -p ~/.config/rstudio
 mv rstudio-prefs.json ~/.config/rstudio/rstudio-prefs.json
 
-rm apt.txt README.md environment.yml postBuild setup_cran.R setup_gh.R setup.R rdd_0.57.tar.gz
+rm apt.txt README.md environment.yml postBuild setup.R rdd_0.57.tar.gz
