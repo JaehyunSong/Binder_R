@@ -26,6 +26,7 @@ dependencies:
   - r-lmtest
   - r-aer
   - r-googlepolylines
+  - r-otel
   # Data Handling
   - r-naniar
   - r-fastdummies
