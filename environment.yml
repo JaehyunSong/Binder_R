@@ -4,7 +4,9 @@ dependencies:
   - r-base=4.3.3
   - r-irkernel
   - r-tidyverse
+  - r-ragg
   - r-xlsx
+  - r-readxl
   - r-haven
   - r-remotes
   - r-devtools
@@ -35,7 +37,6 @@ dependencies:
   - r-quarto
   - r-formatr
   - r-summarytools
-  - r-gt
   - r-gtextras
   - r-kableextra
   - r-bookdown
@@ -54,16 +55,15 @@ dependencies:
   # Visualization
   - r-ggpubr
   - r-gghighlight
+  - r-gt
   - r-ggExtra
   - r-ggridges
-  - r-ragg
   - r-ggalluvial
   - r-treemapify
   - r-ggbump
   - r-dendextend
   - r-ggdendro
   - r-ggmosaic
-  - r-gt
   - r-ghibli
   # Spatial
   - r-sf
