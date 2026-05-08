@@ -67,7 +67,7 @@ dependencies:
   - r-ghibli
   # Spatial
   - r-sf
-  #- r-rgeos
+  - r-rgeos
   - r-rnaturalearth
   - r-rnaturalearthdata
   - r-raster
