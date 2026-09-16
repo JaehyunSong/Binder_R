@@ -75,3 +75,6 @@ mkdir -p ~/.config/rstudio
 mv rstudio-prefs.json ~/.config/rstudio/rstudio-prefs.json
 
 rm apt.txt README.md environment.yml postBuild setup.R
+
+mkdir -p /srv/conda/envs/notebook/bin/tools/x86_64
+ln -s /srv/conda/envs/notebook/bin/deno /srv/conda/envs/notebook/bin/tools/x86_64/deno
