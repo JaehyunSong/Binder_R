@@ -3,7 +3,7 @@
 conda install -c conda-forge gdal sqlite
 
 # determine which version of Quarto to install
-QUARTO_VERSION=1.9.38
+QUARTO_VERSION=1.10.18
 
 # See whether we need to lookup a Quarto version
 if [ $QUARTO_VERSION = "prerelease" ]; then
@@ -70,11 +70,8 @@ quarto install tinytex
 echo Run setup.R
 Rscript setup.R
 
-mkdir -p /srv/conda/envs/notebook/bin/tools/x86_64
-ln -s /srv/conda/envs/notebook/bin/deno /srv/conda/envs/notebook/bin/tools/x86_64/deno
-
 # RStudio設定の移植
 mkdir -p ~/.config/rstudio
 mv rstudio-prefs.json ~/.config/rstudio/rstudio-prefs.json
 
-rm apt.txt README.md environment.yml postBuild setup.R rdd_0.57.tar.gz
+rm apt.txt README.md environment.yml postBuild setup.R
