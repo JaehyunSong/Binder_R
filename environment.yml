@@ -29,3 +29,6 @@ dependencies:
   - r-sf
   - r-raster
   - r-terra
+  - r-fect
+  - r-matchit
+  - r-weightit
